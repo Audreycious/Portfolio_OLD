@@ -13,7 +13,7 @@
 
 <body>
 
-    <nav role="navigation-container" class="col-12">Nav</nav>
+    <nav role="navigation-container" class="bar">Nav</nav>
         <!-- <div role="navigation-content" class="fullScreen">
             <div id="logo">Kingfisher WebDev</div>
             <div role="navigation-button-container" class="fullScreen">
@@ -26,48 +26,57 @@
         </div> -->
 
     <main role="main">
-        <div class="flexbox">
 
-            <header role="home-page" id="heroContent" class="row">
-                <div class="col-4">
-                
-                </div>
-                <div class="col-8"> 
-                    <h1>Hero</h1>
-                </div>
-            </header>
-            <div id="scrollBtnWrapper">
-                <input type="image" id="scrollBtn" alt="Scroll Down" src="http://placehold.it/100x50"></input>
+        <header role="home-page-view" class="row">
+            <div role="left-50%-buffer" class="col left">
             </div>
-                <!--<h2>Audrey Foss</h2>
-                        <h3>Future, expert, full-stack Web Developer based in Minneapolis, MN.
-                        <br>
-                        Specializing in creative content design, unique strategies, and superb customer service.
-                    </h3> -->        
+        
+            <div role="center-40%-content-container" class="col center">
+                <h1>Hero</h1>
+            </div>
 
-            <section id="about" class="row">
-                <div class="col-4">
+            <div role="right-10%-buffer" class="col right">
+            </div>
+        </header>
 
-                </div>
-                <div class="col-8"> 
-                    <p>About</p>
-                </div>
-            </section>
-
-            <section id="projects" class="row">
-                <div class="col-4">
-
-                </div>
-                <div class="col-8"> 
-                    <p>Projects</p>
-                </div>
-            </section>
-
+        <div role="scrl-btn-wrapper" class="scrlBtn">
+            <input type="image" src="https://png.pngtree.com/element_origin_min_pic/16/07/25/235796329d048e4.jpg" alt="Arrows indicating to wheel mouse down or press to scroll down"></input>
         </div>
+
+            <!--<h2>Audrey Foss</h2>
+                    <h3>Future, expert, full-stack Web Developer based in Minneapolis, MN.
+                    <br>
+                    Specializing in creative content design, unique strategies, and superb customer service.
+                </h3> -->        
+    
+        <section role="about-section" class="about row">
+            <div role="left-50%-buffer" class="col left">
+            </div>
+        
+            <div role="center-40%-content-container" class="col center">
+                <p>About</p>
+            </div>
+
+            <div role="right-10%-buffer" class="col right">
+            </div>
+        </section>
+
+        <section role="projects-section" class="projects row">
+            <div role="left-50%-buffer" class="col left">
+            </div>
+        
+            <div role="center-40%-content-container" class="col center">
+                <p>Projects</p>
+            </div>
+
+            <div role="right-10%-buffer" class="col right">
+            </div>
+        </section>
+
     </main>
 
-    <footer role="content-info">
-            Footer
+    <footer role="content-info" class="row bar">
+        Footer
     </footer>
     
 </body>
