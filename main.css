@@ -15,8 +15,11 @@ body {
     background-color: rgba(255, 255, 255, 0);
 }
 
-nav, .col, .row {
+nav, .col, .row, .scrlBtn {
     display: flex;
+}
+
+nav, .col, .row {
     align-items: center;
 }
 
@@ -24,14 +27,14 @@ nav, .row, .scrlBtn {
     justify-content: center;
 }
 
-.scrlBtn {
-    display: flex;
-}
+/* the smaller img {
+    min-width: ;
+} */
 
 nav { 
     position: fixed;
     top: 0;
-    width: 100%;
+    width: inherit;
 } 
 
 .row {
@@ -42,10 +45,10 @@ header, section {
     height: 85vh;
 }
 
-header {    
-    background-image: url("alcedo-atthis-881594_1280flippedWide.jpg");
+header { 
+    background-image: url("alcedo-atthis-881594_1280flippedWide_w1440p.jpg");
     background-repeat: no-repeat;
-    background-size: 1279px 85vh;
+    background-size: cover;
     background-position: center;
 }
 
@@ -95,6 +98,21 @@ div.scrlBtn {
 /* For mobile phones: */
 
   
-/* @media only screen and (min-width: 768px) {
-    For desktop:
-} */
+@media only screen and (max-width: 700px) {
+    header { 
+        background-image: url("alcedo-atthis-881594_1280flippedWide_w700p.jpg");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: left;
+    }
+}
+
+/* Make it so the smallest version shrinks the header height when smaller viewport */
+@media only screen and (max-width: 500px) {
+    header { 
+        background-image: url("alcedo-atthis-881594_1280flippedWide_w425p.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
